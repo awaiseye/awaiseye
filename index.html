@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Awais Ahmad Siddiqi — Portfolio</title>
+  <meta name="description" content="Portfolio and resume of Awais Ahmad Siddiqi — Biomedical/Software Engineer specializing in EEG, RTOS, IoT, RFID/mmWave sensing, and signal processing." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f16;
+      --card:#111826;
+      --card-2:#0f1522;
+      --text:#e6edf3;
+      --muted:#9fb0c2;
+      --brand:#3aa3ff;
+      --brand-2:#6ee7ff;
+      --ring: 0 0 0 2px rgba(58,163,255,.35), 0 0 0 6px rgba(58,163,255,.15);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#0a0e15 40%, #0c1320);color:var(--text)}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;z-index:50;background:rgba(11,15,22,.7);backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid #1c2434}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#001521;font-weight:800}
+    .brand h1{font-size:18px;margin:0}
+    .nav a{font-weight:600;color:var(--muted)}
+    .nav a:hover{color:var(--text)}
+    .nav-links{display:flex;gap:18px;flex-wrap:wrap}
+
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:32px 0}
+    .card{background:linear-gradient(180deg,var(--card),var(--card-2));border:1px solid #1b2434;border-radius:18px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .hero h2{font-size:34px;margin:0 0 8px}
+    .hero p{margin:0;color:var(--muted);line-height:1.7}
+    .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .tag{border:1px solid #22304a;background:#0c1423;border-radius:999px;padding:6px 12px;font-size:12px;color:#b6c4d5}
+
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+    .col-4{grid-column:span 4}
+    .col-8{grid-column:span 8}
+    .col-6{grid-column:span 6}
+    .col-12{grid-column:span 12}
+
+    h3.section{font-size:22px;margin:6px 0 14px}
+    .item{padding:14px 0;border-top:1px dashed #27344d}
+    .item:first-child{border-top:none}
+    .item h4{margin:0 0 6px;font-size:16px}
+    .item .meta{color:var(--muted);font-size:13px}
+
+    .list{display:grid;gap:10px}
+    .pill{display:inline-block;background:#0a1221;border:1px solid #1e2a43;border-radius:10px;padding:8px 10px;font-size:13px;color:#bcd2e6}
+
+    .contact-card a{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;border:1px solid #1e2a43;background:#0a1221}
+    .contact-card a:hover{box-shadow:var(--ring)}
+
+    footer{padding:28px 0;color:#8ba0b7}
+    .small{font-size:13px;color:#94a7be}
+
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .col-8,.col-6,.col-4,.col-12{grid-column:span 12}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="avatar" aria-hidden="true">AS</div>
+        <h1>Awais Ahmad Siddiqi</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h2>R&D Engineer • EEG/RTOS • IoT & Sensing</h2>
+        <p>
+          Research & development enthusiast with strong management and problem‑solving skills.
+          Experienced across RTOS, embedded interfaces (GPIO, UART, USB, SPI, I²C), GPS/RFID/mmWave sensing,
+          machine learning, and signal processing.
+        </p>
+        <div class="tags">
+          <span class="tag">RTOS</span>
+          <span class="tag">EEG</span>
+          <span class="tag">RFID & Backscatter</span>
+          <span class="tag">mmWave Radar</span>
+          <span class="tag">Embedded Systems</span>
+          <span class="tag">IoT</span>
+          <span class="tag">Signal Processing</span>
+          <span class="tag">C++ / Python / MATLAB</span>
+        </div>
+      </div>
+      <div class="card contact-card">
+        <h3 class="section" id="about">Quick Info</h3>
+        <div class="list">
+          <span class="pill">Based in China & Pakistan (international projects)</span>
+          <span class="pill">English (IELTS 7) • Urdu (Native) • Chinese (Intermediate) • Hindi</span>
+          <div class="list" style="margin-top:6px">
+            <a href="mailto:awais_eye@yahoo.com" aria-label="Email Awais">✉️ Email</a>
+            <a href="tel:+8617812783792" aria-label="Call Awais">📞 Phone</a>
+            <!-- If you upload Awais_RTOS.pdf to the same folder, this link will work -->
+            <a href="Awais_RTOS.pdf" aria-label="Download PDF Resume">⬇️ Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="grid">
+      <div class="col-8 card">
+        <h3 class="section">Professional Experience</h3>
+        <div class="item">
+          <h4>PhD Student — School of Software, Tsinghua University, China</h4>
+          <div class="meta">Focus: EEG-based adaptive learning • mmWave/RFID sensing • 2019—Present</div>
+        </div>
+        <div class="item">
+          <h4>Senior Engineer — Sino‑Pak Center for Artificial Intelligence, Haripur, Pakistan</h4>
+          <div class="meta">R&D in AIoT systems • Mentored teams • Project delivery</div>
+        </div>
+        <div class="item">
+          <h4>Lecturer — MNS University of Agriculture, Multan, Pakistan</h4>
+          <div class="meta">Taught embedded systems, DSP, and IoT courses</div>
+        </div>
+        <div class="item">
+          <h4>Research Associate — School of Software, Tsinghua University, China</h4>
+          <div class="meta">Embedded ML • Sensing • Prototyping</div>
+        </div>
+        <div class="item">
+          <h4>Lecturer — Guangxi Science & Technology Normal University, China</h4>
+          <div class="meta">Electronics & software courses</div>
+        </div>
+        <div class="item">
+          <h4>Technologist — ZXtech (中新软), Shenyang, China</h4>
+          <div class="meta">Industrial software & hardware integration</div>
+        </div>
+        <div class="item">
+          <h4>Instrumentation Engineer — Almoiz Industries, D.I. Khan, Pakistan</h4>
+          <div class="meta">Process instrumentation • PLC • Control systems</div>
+        </div>
+      </div>
+      <div class="col-4 card">
+        <h3 class="section">Entrepreneurship</h3>
+        <div class="item">
+          <h4>Founder — Multan Robotics Club</h4>
+          <div class="meta">Community robotics & STEM outreach (Est. 2019)</div>
+        </div>
+        <h3 class="section" style="margin-top:16px">Certifications</h3>
+        <div class="item">
+          <h4>Google™ Project Management Professional</h4>
+          <div class="meta">Credentialed in Agile/Scrum and project delivery</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="grid" style="margin-top:20px">
+      <div class="col-6 card">
+        <h3 class="section">Education</h3>
+        <div class="item">
+          <h4>Northeastern University, China</h4>
+          <div class="meta">Masters in Software Engineering</div>
+        </div>
+        <div class="item">
+          <h4>University of Wah, Pakistan</h4>
+          <div class="meta">BSc Electronics Engineering</div>
+        </div>
+      </div>
+      <div class="col-6 card">
+        <h3 class="section">Languages</h3>
+        <div class="list">
+          <span class="pill">English — IELTS 7</span>
+          <span class="pill">Urdu — Native</span>
+          <span class="pill">Chinese — Intermediate</span>
+          <span class="pill">Hindi — Speaking/Listening</span>
+        </div>
+        <h3 class="section" style="margin-top:14px">Other Skills</h3>
+        <div class="list">
+          <span class="pill">Android Apps</span>
+          <span class="pill">Agile & Scrum</span>
+          <span class="pill">Product Design</span>
+          <span class="pill">Java Web</span>
+          <span class="pill">PCB Design</span>
+          <span class="pill">Digital Logic</span>
+          <span class="pill">Ladder Logic</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="grid" style="margin-top:20px">
+      <div class="col-12 card">
+        <h3 class="section">Areas of Expertise</h3>
+        <div class="list" style="grid-template-columns:repeat(auto-fit,minmax(190px,1fr));display:grid">
+          <span class="pill">RTOS modules</span>
+          <span class="pill">GPIO / UART / USB / SPI / I²C</span>
+          <span class="pill">GPS-based apps & modules</span>
+          <span class="pill">RFID-based sensing</span>
+          <span class="pill">mmWave radar sensing</span>
+          <span class="pill">Machine Learning</span>
+          <span class="pill">Signal Processing</span>
+          <span class="pill">IoT architectures</span>
+          <span class="pill">DSP & DIP</span>
+          <span class="pill">Embedded & Control</span>
+          <span class="pill">Energy Harvesting</span>
+        </div>
+        <h3 class="section" style="margin-top:14px">Languages & Tools</h3>
+        <div class="list" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));display:grid">
+          <span class="pill">C++</span>
+          <span class="pill">Python</span>
+          <span class="pill">MATLAB</span>
+          <span class="pill">Java</span>
+          <span class="pill">OpenCV</span>
+          <span class="pill">PLC</span>
+          <span class="pill">Arduino</span>
+          <span class="pill">Atmel / PIC MCUs</span>
+          <span class="pill">CST Studio</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="grid" style="margin-top:20px">
+      <div class="col-12 card">
+        <h3 class="section">Publications (Selected)</h3>
+        <ol>
+          <li><strong>mmJaw:</strong> Remote Jaw Gesture Recognition with COTS mmWave Radar. <em>IEEE ICPADS 2024</em>.</li>
+          <li><strong>mmHRR:</strong> Monitoring Heart Rate Recovery with Millimeter Wave Radar. <em>IEEE ICPADS 2024</em>.</li>
+          <li>Efficient Ambient LoRa Backscatter with On‑Off Keying Modulation. <em>IEEE/ACM Transactions on Networking</em>, 2021.</li>
+          <li>Poster: Voice Recovery from Human Surroundings with Millimeter Wave Radar. <em>IEEE INFOCOM</em>, 2021.</li>
+          <li><strong>Aloba:</strong> Rethinking ON‑OFF Keying Modulation for Ambient LoRa Backscatter. <em>ACM SenSys</em>, London 2020.</li>
+          <li>The guitar chord‑generating algorithm based on complex network. <em>Physica A: Statistical Mechanics and its Applications</em>.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="grid" style="margin-top:20px">
+      <div class="col-6 card">
+        <h3 class="section">Contact</h3>
+        <p class="small">Feel free to reach out for collaborations, R&D projects, or speaking engagements.</p>
+        <div class="list">
+          <a class="pill" href="mailto:awais_eye@yahoo.com">awais_eye@yahoo.com</a>
+          <a class="pill" href="tel:+8617812783792">(+86) 178‑1278‑3792</a>
+        </div>
+      </div>
+      <div class="col-6 card">
+        <h3 class="section">Fabrication Experience</h3>
+        <div class="list">
+          <span class="pill">Microfluidic sensing</span>
+          <span class="pill">PDMS‑based sensors</span>
+          <span class="pill">Graphene sensors</span>
+          <span class="pill">3D printing</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container">
+      <div class="small">© <span id="y"></span> Awais Ahmad Siddiqi. Built with ❤️ and deployed on GitHub Pages.</div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
